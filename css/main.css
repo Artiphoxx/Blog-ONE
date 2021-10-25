@@ -1,74 +1,109 @@
 @import "blog.css";
 
 body{
-    background-color: #ffffff;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(238, 238, 238) 100%);
     font-family: 'Montserrat';
+    font-weight: 500;
+    overflow: hidden; /* Hide scrollbars */
 }
 
 .header {
-    grid-area: header;
+    grid-area: hd;
     width: 100;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    height: 120px;
+    line-height: 120px;
     padding: 10px 20px;
+    border: 2px solid #70ca46;
   }
   
+  #title{
+      font-size: 300px;
+      font-weight: 3000;
+      text-align: center;
+  }
+
   .navigation {
     display: flex;
     list-style: none;
     width: 300px;
     justify-content: space-between;
     padding: 0;
+    border: 2px solid #70ca46;
   }
   
   .logo {
     width: 60px;
+    border: 2px solid #70ca46;
   }
   
   .sidebar {
-    grid-area: navbar;
+    grid-area: sd;
     text-align: center;
+    border: 2px solid #70ca46;
   }
   
-  .mainContentFlex {
-    grid-area: mainContent;
+  .content {
+    grid-area: main;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    border: 2px solid #70ca46;
   }
   
   .card {
     width: 50%;
+    border: 2px solid #70ca46;
   }
   
   .footer {
-    grid-area: footer;
+    grid-area: ft;
     text-align: center;
+    border: 2px solid #70ca46;
   }
   
-  .container {
-    width: 100%;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header header"
-      "mainContent navbar"
-      "footer footer";
+ /* @media(max-width: 320px){
+    .container{
+        display:grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr 3fr 1fr;
+        border: 2px solid yellow;
+        grid-template-areas:
+       "hd"
+       "sd"
+       "main"
+       "ft";
+       border: 2px solid #70ca46;
+    }
   }
-  /* Responsive for Mobile */
-  @media (max-width: 320px) {
-    .container {
-      width: 100%;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas:
-        "header"
-        "navbar"
-        "mainContent"
-        "footer";
+
+  @media(min-width: 600px) and (max-width: 900px){
+    .container{
+        display:grid;
+        grid-template-rows: 1fr 4fr 1fr;
+        border: 2px solid yellow;
+        grid-template-areas:
+       "hd hd hd"
+       "sd main main"
+       "ft ft ft";
+       border: 2px solid #70ca46;
     }
+  }
+
+  @media(min-width: 901){*/
+    .container{
+        display:grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 1fr 4fr 1fr;
+        border: 2px solid yellow;
+        grid-template-areas:
+       "hd hd hd hd hd"
+       "sd sd main main main"
+       "ft ft ft ft ft";
+       border: 2px solid #70ca46;
     }
+  }
