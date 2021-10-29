@@ -1,28 +1,37 @@
 @import "blog.css";
+@import "card.css";
+@import "footer.css";
+@import "button.css";
 
 body{
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(238, 238, 238) 100%);
     font-family: 'Montserrat';
     font-weight: 500;
     overflow: hidden; /* Hide scrollbars */
+    padding: 0;
+    margin: 0;
 }
 
-.header {
+header {
     grid-area: hd;
     width: 100;
     text-align: center;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     height: 120px;
-    line-height: 120px;
+    line-height: 80px;
     padding: 10px 20px;
     border: 2px solid #70ca46;
   }
   
-  #title{
-      font-size: 300px;
-      font-weight: 3000;
+  h1{
+  }
+
+  .title{
+      font-size: 60px;
+      font-weight: 1000;
       text-align: center;
+      margin: auto;
   }
 
   .navigation {
@@ -30,18 +39,13 @@ body{
     list-style: none;
     width: 300px;
     justify-content: space-between;
-    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     border: 2px solid #70ca46;
   }
   
   .logo {
     width: 60px;
-    border: 2px solid #70ca46;
-  }
-  
-  .sidebar {
-    grid-area: sd;
-    text-align: center;
     border: 2px solid #70ca46;
   }
   
@@ -53,17 +57,7 @@ body{
     border: 2px solid #70ca46;
   }
   
-  .card {
-    width: 50%;
-    border: 2px solid #70ca46;
-  }
-  
-  .footer {
-    grid-area: ft;
-    text-align: center;
-    border: 2px solid #70ca46;
-  }
-  
+
  /* @media(max-width: 320px){
     .container{
         display:grid;
@@ -95,15 +89,21 @@ body{
 
   @media(min-width: 901){*/
     .container{
+        box-sizing: border-box;
         display:grid;
         width: 100vw;
         height: 100vh;
-        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: ;
+        grid-template-rows: 20vh 1fr 10vh;
         border: 2px solid yellow;
         grid-template-areas:
-       "hd hd hd hd hd"
-       "sd sd main main main"
-       "ft ft ft ft ft";
+       "hd"
+       "main"
+       "ft";
        border: 2px solid #70ca46;
     }
+  }
+
+  link{
+
   }
