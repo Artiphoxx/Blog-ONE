@@ -4,13 +4,11 @@
         width: 100vw;
         height: 100vh;
         grid-template-rows: 1fr 2fr 3fr 1fr;
-        border: 2px solid yellow;
         grid-template-areas:
        "hd"
        "sd"
        "main"
        "ft";
-       border: 2px solid #70ca46;
     }
   }
 
@@ -18,26 +16,25 @@
     .blogcontent{
         display:grid;
         grid-template-rows: 1fr 4fr 1fr;
-        border: 2px solid yellow;
         grid-template-areas:
-       "hd hd hd"
-       "sd main main"
-       "ft ft ft";
-       border: 2px solid #70ca46;
+       "hd"
+       "sd"
+       "main"
+       "ft";
     }
   }
 
-  @media(min-width: 901){*/
+  @media(min-width: 901){
     .blogcontent{
         box-sizing: border-box;
         display:grid;
         width: 100vw;
         height: 100vh;
-        grid-template-columns: ;
+        grid-template-columns: 30vw 70vw;
         grid-template-rows: 20vh 1fr 5vh;
         grid-template-areas:
-       "hd hd hd"
-       "sd main main"
-       "ft ft ft";
+       "hd hd"
+       "sd main"
+       "ft ft";
     }
   }
