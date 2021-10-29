@@ -1,13 +1,12 @@
 .card {
     background-color: #c9c9c9;
+    height: fit-content;
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 1fr;
     box-sizing: border-box;
     flex-wrap: wrap;
     border-radius: 10px;
-    margin: 100px;
   }
 
   .cardimage {
