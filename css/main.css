@@ -17,12 +17,12 @@ main{
 }
 
 @media(max-width: 320px){
-.content{
+  .content{
   grid-area: main;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
+  }
 }
 
 @media(min-width: 321px) and (max-width: 900px){
@@ -44,69 +44,68 @@ main{
 }
 
 header {
-    grid-area: hd;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(216, 216, 216) 100%);
-    box-shadow: 0 2px 5px rgb(78, 78, 78);
-    width: 100;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    height: 120px;
-    line-height: 80px;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-  }
-  
+  grid-area: hd;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(216, 216, 216) 100%);
+  box-shadow: 0 2px 5px rgb(78, 78, 78);
+  width: 100;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  line-height: 80px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+ 
 h1{
-      font-size: 60px;
-      font-weight: 1000;
-      text-align: center;
-      margin: auto;
-  }
+  font-size: 60px;
+  font-weight: 1000;
+  text-align: center;
+  margin: auto;
+}
 
 h2{
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    margin: auto;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
 }
 
 h3{
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
   margin: auto;
 }
 
 p{
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    margin: auto;
-  }
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+}
 
 .navigation {
-    display: flex;
-    list-style: none;
-    width: 300px;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  display: flex;
+  list-style: none;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
   
 .container{
-        display:grid;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas:
-       "hd"
-       "main"
-       "ft";
-    }
-  }
+  display:grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "hd"
+  "main"
+  "ft";
+}
 
-  /*LINKS*/
-  a, a:-webkit-any-link{
+/*LINKS*/
+a, a:-webkit-any-link{
     text-decoration: none;
     color:rgb(99, 0, 0);
 }

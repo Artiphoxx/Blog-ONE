@@ -13,7 +13,8 @@
     .blogcontent{
       display: grid;
       grid-template-rows: auto 1fr auto;
-      grid-template-columns: 60% auto;
+      border: 1px solid red;
+      grid-template-columns: 70% 30%;
       grid-template-areas: 
       "hd hd"
       "post about"
@@ -24,8 +25,7 @@
   @media(min-width: 901){
     .blogcontent{
       display: grid;
-      grid-template-rows: auto 1fr auto;
-      grid-template-columns: 60% auto;
+      grid-template-rows: 25px 1em 15px;
       grid-template-areas: 
       "hd hd"
       "post about"
@@ -33,12 +33,43 @@
     }
   }
 
-  .post{
-    grid-area: post;
-    border: 1px solid red;
+.post{
+  grid-area: post;
+  width:500px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  border: 1px solid red;
   }
 
-  .about{
+
+.about {
     grid-area: about;
+    height: 180px;
+    margin: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
     border: 1px solid red;
+    text-align: center;
+    padding: 20px;
   }
+
+  .logo
+  {
+    width: 60px;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pic1{
+    background-image: url("../media/escher.png");
+    object-fit: scale-down;
+    object-position: center;
+    color: white;
+    margin: 5px;
+    }
