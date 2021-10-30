@@ -1,15 +1,25 @@
 .card {
     background-color: #c9c9c9;
+    grid-area: card;
+    width: fit-content;
     height: fit-content;
+    margin: 25px;
     text-align: center;
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     box-sizing: border-box;
     flex-wrap: wrap;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(78, 78, 78);
   }
 
   .cardimage {
       object-fit: fill;
-      border-radius: 10px 10px 0px 0px;
+  }
+
+  .card p{
+    width: 20vw;
+    padding: 0 20px;
+    justify-content: center;
   }

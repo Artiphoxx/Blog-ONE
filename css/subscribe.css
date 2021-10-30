@@ -2,7 +2,7 @@
 input[type=text], select, textarea{
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #c9c9c9;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
@@ -16,7 +16,7 @@ input[type=text], select, textarea{
   
   /* Style the submit button */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #046daa;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -28,9 +28,10 @@ input[type=text], select, textarea{
   /* Style the form */
   .form {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #c9c9c9;
     padding: 20px;
-    width: 80vw;
+    width: 60%;
+    margin: 0 auto;
     height: fit-content;
   }
   
