@@ -3,6 +3,8 @@
 @import "footer.css";
 @import "button.css";
 @import "subscribe.css";
+@import "header.css";
+@import "social.css";
 
 body{
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(216, 216, 216) 100%);
@@ -14,7 +16,6 @@ body{
 
 @media(max-width: 320px){
   .content{
-  grid-area: main;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,46 +24,18 @@ body{
 
 @media(min-width: 321px) and (max-width: 900px){
   .content{
-    grid-area: main;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 }
 
 @media(min-width: 901px){
   .content{
-    grid-area: main;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }
-}
-
-header {
-  grid-area: hd;
-  background: white;
-  box-shadow: 0 2px 5px rgb(78, 78, 78);
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  height: 120px;
-  line-height: 80px;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-}
- 
-h1{
-  font-size: 60px;
-  font-weight: 1000;
-  text-align: center;
-  margin: auto;
-}
-@media(max-width: 320px){
-  h1{
-    font-size: 25px;
-    font-weight: 700;
   }
 }
 
@@ -86,26 +59,7 @@ p{
   text-align: center;
   margin: auto;
 }
-
-.navigation {
-  display: flex;
-  list-style: none;
-  width: 300px;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-}
   
-.container{
-  display:grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-  "hd"
-  "main"
-  "ft";
-}
-
 /*LINKS*/
 a, a:-webkit-any-link{
     text-decoration: none;
@@ -113,6 +67,9 @@ a, a:-webkit-any-link{
 }
 /* Each state */
 a:visited {color:black; }
-a:hover {color:black; }
+a:hover {color:rgb(82, 26, 26) }
 a:focus {color:black; }
-a:hover, a:active {color:black; }
+
+#prueba{
+  background-image: none;
+}

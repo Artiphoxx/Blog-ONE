@@ -45,7 +45,3 @@
 .subsbutton:hover {
 	background-color:#705d1f;
 }
-.subsbutton:active {
-	position:relative;
-	top:1px;
-}
