@@ -6,11 +6,21 @@
 .post{
   grid-area: post;
   display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
+  margin: 25px;
   flex-wrap: wrap;
-  border: 1px solid red;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,
+     inset 0px 0px 0px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,        
+     inset 0px 0px 0px 0px #0001;
+  border-radius: 10px;
+  padding-bottom: 15px;
   }
 
 .about {
@@ -25,14 +35,24 @@
     align-items: center;
     box-sizing: border-box;
     flex-wrap: wrap;
-    border: 1px solid red;
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,
+     inset 0px 0px 0px 0px #0001,
+     inset 0px 0px 0px 0px #fff9,        
+     inset 0px 0px 0px 0px #0001;
+    border-radius: 10px;
   }
 
-@media(max-width: 320px){
+@media(max-width: 750px){
   .blog{
-    grid-template-rows: auto 1fr 1fr auto;
     grid-template-columns: 100vw;
     grid-template-areas: 
     "about"
@@ -40,10 +60,8 @@
     }
   }
   
-  @media(min-width: 321px) and (max-width: 900px){
+  @media(min-width: 751px) and (max-width: 900px){
     .blog{
-      grid-template-columns: 70% 30%;
-      grid-template-rows: auto 1fr 1fr auto;
       grid-template-areas: 
       "about post"
       "about post";
@@ -52,8 +70,6 @@
   
   @media(min-width: 901px){
     .blog{
-      grid-template-columns: 350px auto;
-      border: 2px red;
       grid-template-areas: 
       "about post";
     }
@@ -67,10 +83,27 @@
     margin-right: auto;
   }
 
-  .pic1{
-    background-image: url("../media/escher.png");
-    object-fit: scale-down;
-    object-position: center;
-    color: white;
-    margin: 5px;
-    }
+  .blogbox{
+    display: flexbox;
+    flex-wrap: wrap;
+  }
+
+  .postimg{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .banner{
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+  }
+
+  .blogtxt{
+    padding: 10px;
+  }
