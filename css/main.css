@@ -14,30 +14,17 @@ body{
     margin: 0;
 }
 
-@media(max-width: 320px){
-  .content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  }
-}
-
-@media(min-width: 321px) and (max-width: 900px){
-  .content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-}
-
-@media(min-width: 901px){
   .content{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-}
+
+  @media(max-width: 600px){
+  .content{
+    flex-direction: column;
+  }
+  }
 
 h2{
   font-size: 30px;
@@ -60,15 +47,14 @@ p{
   margin: auto;
 }
   
-/*LINKS*/
 a, a:-webkit-any-link{
     text-decoration: none;
     color:rgb(99, 0, 0);
 }
-/* Each state */
-a:visited {color:black; }
-a:hover {color:rgb(82, 26, 26) }
-a:focus {color:black; }
+
+a:visited{color: black;}
+
+a:hover{color:rgb(82, 26, 26);}
 
 #prueba{
   background-image: none;

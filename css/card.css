@@ -1,5 +1,4 @@
 .card {
-    grid-area: card;
     width: 25%;
     height: fit-content;
     margin: 25px;
@@ -13,23 +12,24 @@
      -7px -7px 20px 0px #fff9,
      -4px -4px 5px 0px #fff9,
      7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001,
-     inset 0px 0px 0px 0px #fff9,
-     inset 0px 0px 0px 0px #0001,
-     inset 0px 0px 0px 0px #fff9,        
-     inset 0px 0px 0px 0px #0001;
+     4px 4px 5px 0px #0001;
     border-radius: 10px;
   }
 
-  .cardimage {
+.cardimage {
       object-fit: contain;
       width: 100%;
       max-height: 100%;
       object-position: center;
   }
 
-  .card p{
-    width: 20vw;
+.card p{
     padding: 0 20px;
     justify-content: center;
   }
+
+@media(max-width: 600px){
+  .card{
+    width: 80%;
+  }
+}

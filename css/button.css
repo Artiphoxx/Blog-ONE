@@ -1,24 +1,21 @@
+/*Structure from https://www.bestcssbuttongenerator.com/ */
 .mybutton {
-	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-	background-color:#5f5f5f;
+	box-shadow:inset 0px 1px 3px 0px #b89191;
+	background-color:#5f4040;
 	border-radius: 30px;
-	border:1px solid #566963;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:11px 23px;
+	color: white;
+	padding: 10px 20px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #5d6835;
     margin-top: 5px;
     margin-bottom: 20px;
+	font-size: 15px;
 }
 .mybutton:hover {
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	background-color:#6c7c7c;
+	background-color:#705d1f;
+	transition: 2s;
 }
 .mybutton:active {
 	position:relative;
@@ -29,24 +26,23 @@
 	box-shadow:inset 0px 1px 3px 0px #b89191;
 	background-color: #700000;
 	border-radius: 30px;
-	border:1px solid #566963;
 	display:inline-block;
 	cursor: pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:11px 23px;
+	color: white;
+	padding: 10px 20px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #5d6835;
+	font-size: 18px;
 }
 .subsbutton:hover {
 	background-color:#705d1f;
+	transition: 1s;
 }
 
 @media(max-width: 600px){
 	.subsbutton{
 		padding: 10px;
+		font-size: 16px;
 	}
 
 }
@@ -54,6 +50,7 @@
 @media(max-width: 450px){
 	.subsbutton{
 		padding: 5px;
+		font-size: 12px;
 	}
 
 }
